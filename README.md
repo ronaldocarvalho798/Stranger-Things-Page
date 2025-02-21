@@ -6,13 +6,12 @@ Uma jornada para quem não tem medo do desconhecido. O caminho para o Mundo Inve
 HTML
 CSS
 JavaScript
-💬 Assuntos abordados
+ 
 HTML
 Estruturação da página
 Semântica
 Acessibilidade
 Web Scraping
-SEO
 CSS
 Posicionamentos
 Pseudo-elementos
@@ -20,6 +19,5 @@ Pseudo-classes
 Flexbox
 Animações
 JavaScript
-Introdução ao JavaScript
 Manipulação do DOM
 

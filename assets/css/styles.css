@@ -253,6 +253,8 @@ section{
 }
 
 #section-stranger-things-trailer .video-frame iframe{
+  width: 560px;
+  height: 315px;
   position: relative;
   bottom: 24px;
   left: 24px;
@@ -277,7 +279,7 @@ section{
 }
 
 #section-stranger-things-gallery .container h2 {
-  width: 800px;
+  max-width: 800px;
 }
 
 #section-stranger-things-gallery .gallery-container {
@@ -311,7 +313,7 @@ section{
 }
 
 #section-form h2{
-  width: 600px;
+  max-width: 600px;
 }
 
 #section-form .form-content h3 {
@@ -374,7 +376,7 @@ section{
 
 footer{
   padding: 60px 0;
-  background-color: var(--footer-background-color);
+  background-color: #9e9e9efa;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -386,25 +388,109 @@ footer{
 footer p {
   max-width: 700px;
   margin-bottom: 24px;
+  z-index: 3;
 }
 
-footer::before,
-footer::after {
-  content: "";
-  width: 300px;
-  height: 200px;
-  background: url("../images/footer/tape.svg") no-repeat;
-  background-size: contain;
-  position: absolute;
-  bottom: -30px;
+/* Responsividade */
+@media (max-width: 900px) {
+
+  #section-stranger-things-trailer{
+    padding: 1rem;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .video-frame{
+    width: 300px;
+  }
+
+  #section-stranger-things-trailer .video-frame iframe{
+    width: 310px;
+    height: 215px;
+    bottom: 12px;
+    left: 12px;
+  }
+
+  #section-stranger-things-trailer .section-texts {
+    width: 90%;
+    text-align: right;
 }
 
-footer::before {
-  left: -50px;
-  transform: rotateZ(-10deg);
+
+
+  #mundo-invertido{
+    width: 200px;
+    
+  }
+  h2,h3{
+    font-size: 2rem;
+  }
+
+#section-inverted-world{
+  padding: 2rem;
+  position: relative;
+}
+#section-stranger-things-gallery .gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+#section-stranger-things-gallery .container {
+  text-align: center;
 }
 
-footer::after {
-  right: -50px;
-  transform: rotateZ(10deg);
+#section-form {
+  width: 100%;
+  padding: 2rem;
+}
+
+#section-form p{
+  font-size: 0.9rem;
+}
+
+#section-form .form-content {
+  gap: 3rem;
+  flex-direction: column;
+}
+
+#section-form .form-container {
+  width: 95%;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.section-texts p{
+  margin-top: .5rem;
+  font-size: 0.7rem;
+}
+
+  #mundo-invertido{
+    width: 130px;
+  }
+#section-inverted-world{
+  padding: 1rem;
+}
+
+#section-form .form-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+h2{
+  margin-bottom: 0;
+}
+
+h2,h3{
+  font-size: 1.2rem;
+}
+
+textarea{
+  height: 100px;
+}
+
 }

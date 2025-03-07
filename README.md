@@ -18,6 +18,8 @@ Pseudo-elementos
 Pseudo-classes
 Flexbox
 Animações
+Sons Interativos
+Theme switcher(Tema mundo normal / mundo invertido)
 JavaScript
 Manipulação do DOM
 
